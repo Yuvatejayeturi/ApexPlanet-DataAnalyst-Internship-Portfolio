@@ -1,45 +1,47 @@
-# Netflix Data Explorer
+# ApexPlanet Data Analyst Internship Portfolio
 
-A portfolio-ready Netflix data exploration and analytics website built with Python.
+A collection of data analytics projects completed during my ApexPlanet Software Pvt. Ltd. internship.
 
-## Features
-- Netflix catalog browsing and filtering
-- TMDB poster integration
-- Rich title details
-- Dataset-based recommendations
-- Interactive Plotly analytics
-- Automatically generated insights
-- ApexPlanet internship certificate page
-- Personal portfolio and skills page
-- SQLite-backed dataset
+## 🎬 Netflix Data Explorer
 
-## Tech Stack
-Python, Streamlit, Pandas, SQLite, Plotly, Requests, python-dotenv
+An interactive Netflix data exploration and analytics website built using Python and Streamlit.
 
-## Run locally
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
+### Features
 
-## TMDB credentials
-Create a `.env` file locally and add either:
-```env
-TMDB_API_KEY=YOUR_API_KEY
-```
-or
-```env
-TMDB_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
-```
+- 🎬 Netflix catalog browsing
+- 🔎 Search and filtering
+- 🖼️ TMDB poster integration
+- 🔎 Detailed title information
+- 🤖 Dataset-based recommendations
+- 📊 Interactive analytics dashboard
+- 💡 Automatic data insights
+- 🏆 Internship certificate
+- 👤 Personal portfolio section
+- 📥 Filtered CSV export
+- 🌑 Netflix-inspired UI
 
-Never commit `.env` to GitHub.
+### Technologies
 
-## Attribution
-This product uses the TMDB API but is not endorsed or certified by TMDB.
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- Plotly
+- SQLite
+- Requests
+- python-dotenv
+- TMDB API
 
-## Analytics Dashboard
-Interactive KPIs and Plotly charts for release years, content type, ratings, genres, countries, and titles added to Netflix, with filtered CSV export.
+### Project Structure
 
-## Portfolio Links
-- GitHub: https://github.com/Yuvatejayeturi
-- LinkedIn: https://www.linkedin.com/in/yuva-teja-yeturi-9b0311342/
+```text
+Netflix_Data_Explorer/
+├── app.py
+├── netflix.db
+├── netflix_titles.csv
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── certificates/
+    ├── Certificate_yuva.pdf
+    └── Certificate_yuva_preview.png
