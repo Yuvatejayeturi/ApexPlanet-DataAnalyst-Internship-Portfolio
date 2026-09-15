@@ -24,8 +24,12 @@ st.set_page_config(
 # ============================================================
 BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
-TMDB_API_KEY = os.getenv("TMDB_API_KEY", "").strip()
-TMDB_ACCESS_TOKEN = os.getenv("TMDB_ACCESS_TOKEN", "").strip()
+try:
+    TMDB_API_KEY = st.secrets.get("TMDB_API_KEY", os.getenv("TMDB_API_KEY", "")).strip()
+    TMDB_ACCESS_TOKEN = st.secrets.get("TMDB_ACCESS_TOKEN", os.getenv("TMDB_ACCESS_TOKEN", "")).strip()
+except Exception:
+    TMDB_API_KEY = os.getenv("TMDB_API_KEY", "").strip()
+    TMDB_ACCESS_TOKEN = os.getenv("TMDB_ACCESS_TOKEN", "").strip()
 TMDB_IMAGE_BASE = "https://image.tmdb.org/t/p/w500"
 
 
